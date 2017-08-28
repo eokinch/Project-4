@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The News Today</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans:400,600|Raleway:400,400i,600" rel="stylesheet">
+	<script src="https://use.fontawesome.com/2d32676acd.js"></script>
+</head>
+<body class="clearfix">
+	<nav>
+		<a href="index.html" class="home">Home</a>
+		<a href="index.html" class="mobileHome"><i class="fa fa-home" aria-hidden="true"></i></a>
+	</nav>
+	<header class="wrapper onLoadStyle">
+		<h1>The News Today</h1>
+		<img src="images/tali-computer.png" alt="cartoon bever reading computer screen">
+	</header>
+	<main class="wrapper">
+		<section class="category">
+			<form id="newsCategory" class="newsCategory">
+				<p>What Are You Looking For?</p>
+				<button class="chooseCategory" id="business" value="business">Business</button>
+				<button class="chooseCategory" id="entertainment" value="entertainment">Entertainment</button>
+				<button class="chooseCategory" id="gaming" value="gaming">Gaming</button>
+				<button class="chooseCategory" id="general" value="general">General</button>
+				<button class="chooseCategory" id="music" value="music">Music</button>
+				<button class="chooseCategory" id="politics" value="politics">Politics</button>
+				<button class="chooseCategory" id="science-and-nature" value="science-and-nature">Science & Nature</button>
+				<button class="chooseCategory" id="sport" value="sport">Sports</button>
+				<button class="chooseCategory" id="technology" value="technology">Technology</button>
+			</form>
+		</section>
+		<section class="newsContent">
+			<h2 class="chosenSource">Latest news from <span></span></h2>
+			<div class="currentNews ">
+				<div class="newsPosts"></div>
+				<button class="loadMorePosts">Load More Articles</button>
+				<form id="newsSource" class="newsSource">
+					<p></p>
+					<div class="sources"></div>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>Powered BY <a href="https://newsapi.org/">News API</a></p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

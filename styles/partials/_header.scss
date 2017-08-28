@@ -1,0 +1,145 @@
+header {
+	position: relative;
+	h1 {
+		letter-spacing: 10px;
+	}
+	img {
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+// header styling on load
+
+.onLoadStyle {
+	padding-top: 30px;
+	height: 60vh;
+	h1 {
+		font-size: 80px;
+	}
+}
+
+/*header styling when chosing source*/
+.sourceChoiceStyle {
+	height: 40vh;
+	h1 {
+		font-size: 50px;
+	}
+	img {
+		top: 55%;
+	}
+}
+
+/*header style when looking at articles*/
+.articleStyle {
+	display: flex;
+	height: 25vh;
+	justify-content: center;
+	align-items: flex-end;
+	img {
+		width: 25%;
+		top: -10%;
+		transform: translateX(-50%);
+	}
+	h1 {
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 940px) {
+	/*header on load*/
+	.onLoadStyle {
+		padding-top: 20px;
+		height: 55vh;
+		h1 {
+			font-size: 70px;
+		}
+	}
+
+	.articleStyle img {
+		width: 30%;
+	}
+}
+
+@media (max-width: 768px) {
+	/*header on load*/
+	.onLoadStyle {
+		padding-top: 30px;
+		h1 {
+			font-size: 50px;
+		}
+	}
+
+	.articleStyle {
+		img {
+			width: 33%;
+		}
+		h1 {
+			font-size: 30px;
+		}
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 650px) {
+	.onLoadStyle {
+		padding-top: 10px;
+		height: 40vh;
+		h1 {
+			font-size: 45px;
+			letter-spacing: 6px;
+			width: 100%;
+		}
+	}
+	.sourceChoiceStyle {
+		height: 30vh;
+		h1 {
+			letter-spacing: 8px;
+			font-size: 40px;
+		}
+		img {
+			top: 60%;
+		}
+	}
+
+	.articleStyle {
+		img {
+			width: 45%;
+		}
+		h1 {
+			font-size: 30px;
+		}
+	}
+}
+
+@media (max-width: 498px) {
+	.onLoadStyle {
+		height: 30vh;
+		h1 {
+			letter-spacing: 4px;
+			font-size: 35px;
+		}
+	}
+
+	.sourceChoiceStyle {
+		height: 30vh;
+		h1 {
+			letter-spacing: 4px;
+			font-size: 35px;
+		}
+	}
+
+	.articleStyle {
+		img {
+			width: 50%;
+			transform: translateX(-50%);
+		}
+		h1 {
+			letter-spacing: 4px;
+			font-size: 28px;
+		}
+	}
+}
